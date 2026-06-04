@@ -3,78 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>八德埤塘 - 昆蟲世界</title>
+    <title>下厝埤 - 互動任務</title>
     <style>
-        body { font-family: sans-serif; margin: 0; padding: 0; background-color: #f4f7f6; color: #333; }
-        header { background-color: #2c3e50; color: white; text-align: center; padding: 2em 0; }
-        nav { background-color: #34495e; position: sticky; top: 0; z-index: 1000; }
+        body { font-family: sans-serif; margin: 0; padding: 0; background-color: #f4f7f6; color: #333; line-height: 1.6; }
+        header { background-color: #2e7d32; color: white; text-align: center; padding: 2.5em 0; }
+        nav { background-color: #1b5e20; position: sticky; top: 0; z-index: 1000; }
         nav ul { list-style: none; margin: 0; padding: 0; display: flex; }
         nav li { position: relative; }
-        nav a { display: block; color: white; padding: 15px 20px; text-decoration: none; }
-        nav a:hover { background-color: #1abc9c; }
-        nav ul ul { display: none; position: absolute; background-color: #34495e; min-width: 150px; flex-direction: column; }
+        nav a { display: block; color: white; padding: 15px 25px; text-decoration: none; font-weight: bold; }
+        nav a:hover { background-color: #4caf50; }
+        nav ul ul { display: none; position: absolute; background-color: #1b5e20; min-width: 160px; flex-direction: column; }
         nav ul li:hover > ul { display: flex; }
-        main { max-width: 1200px; margin: 20px auto; padding: 20px; background-color: white; border-radius: 8px; min-height: 400px; }
-        .card-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px; }
-        .card { border: 1px solid #ddd; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        .card img { width: 100%; height: 200px; object-fit: cover; }
-        .card-content { padding: 15px; }
-        footer { background-color: #2c3e50; color: white; text-align: center; padding: 15px 0; margin-top: 40px; }
+        main { max-width: 800px; margin: 30px auto; padding: 30px; background-color: white; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        h2 { color: #2e7d32; }
+        .quiz-container { background: #f9f9f9; padding: 25px; border-radius: 6px; border: 1px solid #e0e0e0; margin-top: 20px; }
+        .btn { background-color: #2e7d32; color: white; border: none; padding: 10px 20px; font-size: 1em; border-radius: 4px; cursor: pointer; margin-top: 15px; }
+        .btn:hover { background-color: #1b5e20; }
+        #secret-image { display: none; margin-top: 25px; text-align: center; background: #e8f5e9; padding: 15px; border-radius: 6px; }
+        #secret-image img { max-width: 100%; border-radius: 6px; }
+        .option { margin: 10px 0; }
     </style>
 </head>
 <body>
     <header>
-        <h1>桃園八德生態埤塘公園</h1>
-        <p>期末小組報告專案網頁</p>
+        <h1>🎯 模組五：互動任務與導覽設計</h1>
+        <p>實踐導覽：SugarCube 任務設計邏輯與歷史生態互動測驗</p>
     </header>
     <nav>
         <ul>
-            <li><a href="index.html">首頁</a></li>
-            <li><a href="#">埤塘介紹 ▼</a>
+            <li><a href="index.html">首頁（水利歷史）</a></li>
+            <li><a href="#">生態與現狀 ▼</a>
                 <ul>
-                    <li><a href="index.html">地理位置</a></li>
+                    <li><a href="birds.html">生態調查（動物植物）</a></li>
+                    <li><a href="plants.html">變遷與現狀（挑戰研究）</a></li>
                 </ul>
             </li>
-            <li><a href="#">生態分類 ▼</a>
-                <ul>
-                    <li><a href="birds.html">鳥類觀察</a></li>
-                    <li><a href="plants.html">水生植物</a></li>
-                    <li><a href="insects.html">昆蟲世界</a></li>
-                </ul>
-            </li>
+            <li><a href="insects.html">互動任務（導覽測驗）</a></li>
         </ul>
     </nav>
     <main>
-        <section>
-            <h2>🦟 埤塘常見昆蟲世界</h2>
-            <p>以下為埤塘水域周邊最常觀測到的指標性昆蟲（Card Layout 呈現）：</p>
-            <div class="card-container">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1576014131795-d440191a8e8b?w=500" alt="猩紅蜻蜓">
-                    <div class="card-content">
-                        <h3>猩紅蜻蜓</h3>
-                        <p>雄蟲全身都是非常顯眼的鮮紅色。牠們喜歡停在埤塘邊的樹枝或草桿上，是觀測水質是否乾淨的重要昆蟲指標。</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1619807572718-d784260f8db7?w=500" alt="青斑蝶">
-                    <div class="card-content">
-                        <h3>青斑蝶</h3>
-                        <p>翅膀上有半透明的淡青色斑紋，飛舞時姿態優雅。常在公園內的蜜源植物區吸食花蜜。</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1470240731273-7821a6eeb6bd?w=500" alt="大白斑蝶">
-                    <div class="card-content">
-                        <h3>大白斑蝶</h3>
-                        <p>體型很大的白色蝴蝶，因為飛行速度很慢，在空中有如一張漂浮的白紙，又被稱為「大笨蝶」，非常可愛。</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <h2>📲 導覽設計與實地觀察任務</h2>
+        <p><b>【現場觀察任務】</b> 導覽引導核心：當使用者抵達大園下厝埤現場時，網頁將觸發任務，引導使用者抬頭尋找埤塘周邊水泥機房下隱藏的地下進水暗管，並觀察岸邊的香蒲群聚，尋找外來種福壽螺的粉紅色卵塊，藉此反思生態現狀。</p>
+        
+        <hr>
+        
+        <h2>🧠 下厝埤隨堂互動測驗</h2>
+        <p>設計一個關於下厝埤歷史與生態的小問題，答對即可成功解鎖觀看<b>「隱藏版特寫地景照」</b>！</p>
+        
+        <div class="quiz-container">
+            <h3>🤔 問題：大園下厝埤最早是由哪一個時期的漢人移民開墾拓荒、共同挖掘而成的？</h3>
+            <div class="option"><input type="radio" name="quiz" value="A" id="op1"> <label for="op1">A) 戰後民國初期</label></div>
+            <div class="option"><input type="radio" name="quiz" value="B" id="op2"> <label for="op2">B) 日治大正年間</label></div>
+            <div class="option"><input type="radio" name="quiz" value="C" id="op3"> <label for="op3">C) 清代中晚期（正確答案）</label></div>
+            <button class="btn" onclick="checkAnswer()">送出答案</button>
+            
+            <div id="quiz-result" style="margin-top: 15px; font-weight: bold;"></div>
+        </div>
+
+        <div id="secret-image">
+            <h3 style="color:#2e7d32;">🎉 恭喜答對！成功解鎖【下厝埤隱藏版地景特寫】</h3>
+            <p>（此圖片代表本組實地拍攝與國家文化記憶庫之研究精神）</p>
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800" alt="下厝埤隱藏風景">
+        </div>
     </main>
+
+    <script>
+        function checkAnswer() {
+            var selected = document.querySelector('input[name="quiz"]:checked');
+            var resultDiv = document.getElementById('quiz-result');
+            var secretImg = document.getElementById('secret-image');
+            
+            if(!selected) {
+                resultDiv.style.color = "red";
+                resultDiv.innerHTML = "請先選擇一個答案喔！";
+                return;
+            }
+            
+            if(selected.value === 'C') {
+                resultDiv.style.color = "green";
+                resultDiv.innerHTML = "🎯 答對了！太厲害了！";
+                secretImg.style.display = "block";
+            } else {
+                resultDiv.style.color = "red";
+                resultDiv.innerHTML = "❌ 答錯囉，提示：可以去【首頁】的起源故事找答案再試一次！";
+                secretImg.style.display = "none";
+            }
+        }
+    </script>
     <footer>
-        <p>© 2026 網頁設計期末報告 第一週作業成功下莊</p>
+        <p>© 2026 網頁設計期末報告 - 下厝埤研究小組</p>
     </footer>
 </body>
 </html>

@@ -3,56 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>桃園八德生態埤塘公園 - 首頁</title>
+    <title>桃園下厝埤研究導覽網</title>
     <style>
-        body { font-family: sans-serif; margin: 0; padding: 0; background-color: #f4f7f6; color: #333; }
-        header { background-color: #2c3e50; color: white; text-align: center; padding: 2em 0; }
-        nav { background-color: #34495e; position: sticky; top: 0; z-index: 1000; }
+        body { font-family: sans-serif; margin: 0; padding: 0; background-color: #f4f7f6; color: #333; line-height: 1.6; }
+        header { background-color: #2e7d32; color: white; text-align: center; padding: 2.5em 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        nav { background-color: #1b5e20; position: sticky; top: 0; z-index: 1000; }
         nav ul { list-style: none; margin: 0; padding: 0; display: flex; }
         nav li { position: relative; }
-        nav a { display: block; color: white; padding: 15px 20px; text-decoration: none; }
-        nav a:hover { background-color: #1abc9c; }
-        nav ul ul { display: none; position: absolute; background-color: #34495e; min-width: 150px; flex-direction: column; }
+        nav a { display: block; color: white; padding: 15px 25px; text-decoration: none; font-weight: bold; }
+        nav a:hover { background-color: #4caf50; }
+        nav ul ul { display: none; position: absolute; background-color: #1b5e20; min-width: 160px; flex-direction: column; }
         nav ul li:hover > ul { display: flex; }
-        main { max-width: 1200px; margin: 20px auto; padding: 20px; background-color: white; border-radius: 8px; min-height: 400px; }
-        .map-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; }
+        main { max-width: 1200px; margin: 30px auto; padding: 30px; background-color: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        h2 { color: #2e7d32; border-bottom: 2px solid #81c784; padding-bottom: 10px; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        .map-container { position: relative; padding-bottom: 60%; height: 0; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
         .map-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
-        footer { background-color: #2c3e50; color: white; text-align: center; padding: 15px 0; margin-top: 40px; }
+        .info-box { background-color: #e8f5e9; padding: 20px; border-left: 5px solid #2e7d32; border-radius: 4px; margin-bottom: 20px; }
+        footer { background-color: #1b5e20; color: white; text-align: center; padding: 20px 0; margin-top: 50px; }
+        @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
     <header>
-        <h1>桃園八德生態埤塘公園</h1>
-        <p>期末小組報告專案網頁</p>
+        <h1>💧 桃園大園區：下厝埤生態導覽</h1>
+        <p>期末專案：地景水利、歷史文化與變遷研究報告</p>
     </header>
     <nav>
         <ul>
-            <li><a href="index.html">首頁</a></li>
-            <li><a href="#">埤塘介紹 ▼</a>
+            <li><a href="index.html">首頁（水利歷史）</a></li>
+            <li><a href="#">生態與現狀 ▼</a>
                 <ul>
-                    <li><a href="index.html">地理位置</a></li>
+                    <li><a href="birds.html">生態調查（動物植物）</a></li>
+                    <li><a href="plants.html">變遷與現狀（挑戰研究）</a></li>
                 </ul>
             </li>
-            <li><a href="#">生態分類 ▼</a>
-                <ul>
-                    <li><a href="birds.html">鳥類觀察</a></li>
-                    <li><a href="plants.html">水生植物</a></li>
-                    <li><a href="insects.html">昆蟲世界</a></li>
-                </ul>
-            </li>
+            <li><a href="insects.html">互動任務（導覽測驗）</a></li>
         </ul>
     </nav>
     <main>
-        <section>
-            <h2>📍 埤塘地理位置</h2>
-            <p>八德生態埤塘公園位於桃園市八德區，是一座結合生態、美學與防災功能的國家級重要濕地。這裡保留了原本的埤塘地形，並栽植大量多樣化植物，吸引了許多野生動物在此棲息。</p>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.2023531063183!2d121.29871147614068!3d24.959223741303862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681f215ea3a3bf%3A0xe67db587fa9f3453!2z5YWr5b6355Sf6YWL5Zek5aGY5YWs5ZyS!5e0!3m2!1szh-TW!2stw!4v1717478400000!5m2!1szh-TW!2stw" allowfullscreen="" loading="lazy"></iframe>
+        <div class="grid-2">
+            <div>
+                <h2>📍 模組一：地景與水利系統</h2>
+                <div class="info-box">
+                    <strong>1. 給水系統與編號：</strong><br>
+                    下厝埤位於桃園市大園區（原大園鄉），屬於<b>桃園大圳系統</b>的重要灌溉埤塘之一，主要負責供應大園下厝地區的農業與生活用水。
+                </div>
+                <div class="info-box">
+                    <strong>2. 關鍵構造與分水邏輯：</strong><br>
+                    下厝埤設有標準的<b>進水口（閘門控制）</b>與防洪用的<b>溢洪道</b>。其分水邏輯主要依據乾枯水期與大圳供水公告，由桃園農田水利會進行閘門的定時定額開啟；當颱風或暴雨來臨時，多餘的水量會透過溢洪道自動溢流排入周邊的老街溪支流，達到「調節防洪」的安全防線。
+                </div>
+                
+                <h2>📜 模組三：歷史與文化（地方認同）</h2>
+                <p><b>起源故事：</b>下厝埤最早可追溯至<b>清代中晚期</b>，由當地開墾的漢人移民共同開挖蓄水。地名「下厝」指的是當地早期的聚落名稱（相對於上厝）。這口埤塘最初是由地方宗族共同管理所有的私有埤塘，日治時期後被逐步納入官設大圳系統統籌管理。</p>
+                <p><b>周邊生活痕跡：</b>早期下厝埤周邊設有婦女洗衣服的<b>「洗衫坑」</b>以及居民信仰中心的<b>土地公廟</b>。雖然部分痕跡已因道路拓寬而部分水泥化，但仍保存了早期農耕社會「人水共生」的地景特色。</p>
             </div>
-        </section>
+            <div>
+                <h2>🗺️ 下厝埤衛星地理位置</h2>
+                <p>透過 Google Maps 衛星模式，可以清晰觀察下厝埤的進出水系與周邊地景：</p>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.2882798950663!2d121.20645607614407!3d25.058223637318712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a033cff9c2fb%3A0xf639cb4526dfc56b!2z5LiL5Y6f5Zqk!5e0!3m2!1szh-TW!2stw!4v1717479000000!5m2!1szh-TW!2stw" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
-        <p>© 2026 網頁設計期末報告 第一週作業成功下莊</p>
+        <p>© 2026 網頁設計期末報告 - 下厝埤研究小組</p>
     </footer>
 </body>
 </html>
